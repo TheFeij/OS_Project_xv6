@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="xv6"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="xv6">
+				<Option output="C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/xv6.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel"/>
+					<Add directory="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 xv6"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="xv6/fast">
+				<Option output="C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/xv6.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel"/>
+					<Add directory="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 xv6/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/.idea/.gitignore">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/.idea/encodings.xml">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/.idea/modules.xml">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/.idea/vcs.xml">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/.idea/workspace.xml">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/.idea/xv6.iml">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/.dir-locals.el">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/.editorconfig">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/.gdbinit.tmpl-riscv">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/.gitignore">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/LICENSE">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/Makefile">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/README">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/fs.img">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/bio.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/bio.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/bio.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/buf.h">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/console.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/console.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/console.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/defs.h">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/elf.h">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/entry.S">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/entry.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/exec.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/exec.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/exec.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/fcntl.h">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/file.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/file.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/file.h">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/file.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/fs.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/fs.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/fs.h">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/fs.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/kalloc.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/kalloc.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/kalloc.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/kernel">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/kernel.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/kernel.ld">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/kernel.sym">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/kernelvec.S">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/kernelvec.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/log.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/log.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/log.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/main.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/main.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/main.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/memlayout.h">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/param.h">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/pipe.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/pipe.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/pipe.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/plic.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/plic.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/plic.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/printf.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/printf.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/printf.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/proc.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/proc.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/proc.h">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/proc.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/ramdisk.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/riscv.h">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/sleeplock.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/sleeplock.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/sleeplock.h">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/sleeplock.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/spinlock.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/spinlock.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/spinlock.h">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/spinlock.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/start.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/start.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/start.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/stat.h">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/string.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/string.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/string.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/swtch.S">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/swtch.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/syscall.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/syscall.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/syscall.h">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/syscall.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/sysfile.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/sysfile.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/sysfile.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/sysproc.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/sysproc.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/sysproc.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/trampoline.S">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/trampoline.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/trap.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/trap.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/trap.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/types.h">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/uart.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/uart.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/uart.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/virtio.h">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/virtio_disk.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/virtio_disk.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/virtio_disk.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/vm.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/vm.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/kernel/vm.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/mkfs/mkfs">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/mkfs/mkfs.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/_cat">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/_echo">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/_forktest">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/_grep">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/_grind">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/_init">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/_kill">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/_ln">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/_ls">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/_mkdir">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/_rm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/_sh">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/_stressfs">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/_usertests">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/_wc">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/_zombie">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/cat.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/cat.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/cat.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/cat.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/cat.sym">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/echo.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/echo.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/echo.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/echo.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/echo.sym">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/forktest.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/forktest.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/forktest.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/forktest.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/grep.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/grep.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/grep.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/grep.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/grep.sym">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/grind.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/grind.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/grind.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/grind.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/grind.sym">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/init.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/init.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/init.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/init.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/init.sym">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/initcode">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/initcode.S">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/initcode.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/initcode.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/initcode.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/initcode.out">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/kill.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/kill.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/kill.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/kill.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/kill.sym">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/ln.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/ln.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/ln.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/ln.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/ln.sym">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/ls.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/ls.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/ls.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/ls.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/ls.sym">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/mkdir.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/mkdir.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/mkdir.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/mkdir.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/mkdir.sym">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/printf.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/printf.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/printf.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/rm.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/rm.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/rm.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/rm.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/rm.sym">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/sh.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/sh.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/sh.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/sh.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/sh.sym">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/stressfs.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/stressfs.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/stressfs.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/stressfs.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/stressfs.sym">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/ulib.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/ulib.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/ulib.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/umalloc.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/umalloc.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/umalloc.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/user.h">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/user.ld">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/usertests.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/usertests.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/usertests.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/usertests.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/usertests.sym">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/usys.S">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/usys.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/usys.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/usys.pl">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/wc.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/wc.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/wc.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/wc.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/wc.sym">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/zombie.asm">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/zombie.c">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/zombie.d">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/zombie.o">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/xv6-riscv/user/zombie.sym">
+			<Option target="xv6"/>
+		</Unit>
+		<Unit filename="C:/Users/ASUS/Desktop/S8/xv6/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

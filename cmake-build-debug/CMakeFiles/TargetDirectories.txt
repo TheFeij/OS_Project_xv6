@@ -1,0 +1,3 @@
+C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/CMakeFiles/xv6.dir
+C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
