@@ -2,8 +2,7 @@
 #include "kernel/stat.h"
 #include "user/user.h"
 
-int
-main(void){
+int main(void){
     getHelloWorld();
     exit(0);
 }
