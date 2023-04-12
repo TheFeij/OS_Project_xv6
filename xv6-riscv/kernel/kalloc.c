@@ -87,14 +87,14 @@ kalloc(void)
 unsigned long
 getFreememSize(){
 
-    struct run *r;
-    unsigned long freemem=0;
-    r = kmem.freelist;
+    struct run *run;
+    uint64 freemem = 0;
+    run = kmem.freelist;
     acquire(&kmem.lock);
 
-    while(r){
+    while(run){
         freemem += PGSIZE;     // in riscv.h it is indicated that 1 memory page is 4096 bytes
-        r = r->next;
+        run = run->next;
     }
 
     release(&kmem.lock);

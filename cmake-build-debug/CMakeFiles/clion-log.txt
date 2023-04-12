@@ -1,4 +1,13 @@
 "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2021.3.4/bin/ninja/win/ninja.exe" -DCMAKE_C_STANDARD=11 -G Ninja C:\Users\ASUS\Desktop\S8\xv6
 -- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/ASUS/Desktop/S8/xv6/cmake-build-debug
+CMake Error at CMakeLists.txt:14 (add_executable):
+  Cannot find source file:
+
+    cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-b1f991968f2311a756d6.json
+
+
+CMake Error at CMakeLists.txt:14 (add_executable):
+  No SOURCES given to target: xv6
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
