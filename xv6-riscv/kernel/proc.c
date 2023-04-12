@@ -146,6 +146,10 @@ found:
   p->context.ra = (uint64)forkret;
   p->context.sp = p->kstack + PGSIZE;
 
+  acquire(&tickslock);
+  p->ticks = ticks; // initialize ticks field with the current value of ticks
+  release(&tickslock);
+
   return p;
 }
 
@@ -685,6 +689,68 @@ procdump(void)
 
 int
 getHelloWorld(void){
+
     printf("Hello World!\n");
     return 0;
 }
+
+int
+getProcTick(int pid) {
+
+    struct proc *p;
+    uint ticks_taken;
+
+    for(p = proc; p < &proc[NPROC]; p++) {
+        acquire(&p->lock);
+        if(p->state != UNUSED && p->pid == pid) {
+            ticks_taken = ticks - p->ticks;
+            release(&p->lock);
+            return ticks_taken;
+        }
+        release(&p->lock);
+    }
+
+    return -1;
+}
+
+
+uint16
+getNumOfProcs(){
+
+    uint16 procs = 0;
+    struct proc *p;
+
+    for(p = proc; p < &proc[NPROC]; p++) {
+        acquire(&p->lock);
+        if(p->state != UNUSED)
+            procs++;
+        release(&p->lock);
+    }
+
+    return procs;
+}
+
+
+int
+sysinfo(struct sysinfo *info)
+{
+    acquire(&tickslock);
+    // kernel.asm line 42 says timer interrupts happen 1/10th seconds in qemu
+    long uptime = ticks * 0.1;
+    release(&tickslock);
+
+    uint64 totalRam = PHYSTOP - KERNBASE;
+    uint64 freeRam = getFreememSize();
+    uint16 procs = getNumOfProcs();
+
+    if(uptime < 0 || totalRam < 0 || freeRam < 0 || procs <= 0)
+        return -1;
+
+    info->freeram = freeRam;
+    info->totalram = totalRam;
+    info->procs = procs;
+    info->uptime = uptime;
+
+    return 0;
+}
+

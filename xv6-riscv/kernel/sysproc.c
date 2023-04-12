@@ -94,3 +94,33 @@ uint64
 sys_getHelloWorld(void){
     return getHelloWorld();
 }
+
+uint64
+sys_getProcTick(void){
+    int pid;
+
+    argint(0, &pid);
+    return getProcTick(pid);
+}
+
+uint64
+sys_sysinfo(void){
+
+    struct sysinfo info;
+    uint64 srcva;
+    argaddr(0, &srcva);
+
+    //// Copy from user to kernel.
+    if(copyin(myproc()->pagetable , (char *)&info, srcva, sizeof(struct sysinfo)) < 0){
+        return -1;
+    }
+
+    sysinfo(&info);
+
+    //// Copy from kernel to user.
+    if(copyout(myproc()->pagetable , srcva, (char *)&info, sizeof(struct sysinfo)) < 0){
+        return -1;
+    }
+    return 0;
+}
+

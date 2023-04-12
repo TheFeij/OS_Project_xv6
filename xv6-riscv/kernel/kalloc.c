@@ -80,3 +80,24 @@ kalloc(void)
     memset((char*)r, 5, PGSIZE); // fill with junk
   return (void*)r;
 }
+
+
+// this function is added so sysinfo system call can get the
+// size of the free memory available in bytes
+unsigned long
+getFreememSize(){
+
+    struct run *r;
+    unsigned long freemem=0;
+    r = kmem.freelist;
+    acquire(&kmem.lock);
+
+    while(r){
+        freemem += PGSIZE;     // in riscv.h it is indicated that 1 memory page is 4096 bytes
+        r = r->next;
+    }
+
+    release(&kmem.lock);
+
+    return freemem;
+}
