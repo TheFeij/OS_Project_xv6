@@ -113,4 +113,4 @@ add_executable(xv6
         xv6-riscv/Makefile
         xv6-riscv/README
         "New Text Document.txt"
-        xv6-riscv/user/getProcTicksTest.c xv6-riscv/user/sysinfoTest.c)
+        xv6-riscv/user/getProcTicksTest.c xv6-riscv/user/sysinfoTest.c xv6-riscv/kernel/sysinfo.h)
