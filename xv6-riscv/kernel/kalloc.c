@@ -98,6 +98,6 @@ getFreememSize(){
     }
 
     release(&kmem.lock);
-
     return freemem;
+
 }

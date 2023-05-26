@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include "types.h"
 #include "param.h"
 #include "memlayout.h"
@@ -26,6 +27,9 @@ extern char trampoline[]; // trampoline.S
 // memory model when using p->parent.
 // must be acquired before any p->lock.
 struct spinlock wait_lock;
+
+//default scheduling algorithm for xv6-riscv is round-robin
+enum scheduling_algorithm schedulingAlgorithm = SCHED_RR;
 
 // Allocate a page for each process's kernel stack.
 // Map it high in memory, followed by an invalid
@@ -439,42 +443,92 @@ wait(uint64 addr)
   }
 }
 
-// Per-CPU process scheduler.
-// Each CPU calls scheduler() after setting itself up.
-// Scheduler never returns.  It loops, doing:
-//  - choose a process to run.
-//  - swtch to start running that process.
-//  - eventually that process transfers control
-//    via swtch back to the scheduler.
-void
-scheduler(void)
+// implemented the FCFS with round-robin for init and sh
+// option key needs to be implemented
+void scheduler(void)
 {
-  struct proc *p;
-  struct cpu *c = mycpu();
-  
-  c->proc = 0;
-  for(;;){
-    // Avoid deadlock by ensuring that devices can interrupt.
-    intr_on();
+    struct proc *p;
+    struct cpu *c = mycpu();
 
-    for(p = proc; p < &proc[NPROC]; p++) {
-      acquire(&p->lock);
-      if(p->state == RUNNABLE) {
-        // Switch to chosen process.  It is the process's job
-        // to release its lock and then reacquire it
-        // before jumping back to us.
-        p->state = RUNNING;
-        c->proc = p;
-        swtch(&c->context, &p->context);
+    c->proc = 0;
+    for(;;){
+        // Avoid deadlock by ensuring that devices can interrupt.
+        intr_on();
 
-        // Process is done running for now.
-        // It should have changed its p->state before coming back.
-        c->proc = 0;
-      }
-      release(&p->lock);
+        if(schedulingAlgorithm == SCHED_FCFS){
+            int count = 0; // Counter for the number of FCFS processes seen
+            struct proc* firstProcess = 0;
+
+            // check if there are processes other than init and sh and
+            // choose the one that has come first
+            for(p = proc; p < &proc[NPROC]; p++) {
+                acquire(&p->lock);
+                if((p->state == RUNNABLE) && (p->pid > 1)) {
+                    count++;
+                    if (!firstProcess || p->ticks < firstProcess->ticks)
+                    {
+                        if (firstProcess)
+                            release(&firstProcess->lock);
+
+                        firstProcess = p;
+                        continue;
+                    }
+                }
+                release(&p->lock);
+            }
+
+            // If there are no other FCFS processes, go back to
+            // round-robin for init and sh
+            if(count == 0) {
+                for (p = proc; p < &proc[NPROC]; p++) {
+                    acquire(&p->lock);
+                    if ((p->state == RUNNABLE) && (p->pid == 0 || p->pid == 1)) {
+                        // Switch to chosen process.  It is the process's job
+                        // to release its lock and then reacquire it
+                        // before jumping back to us.
+                        p->state = RUNNING;
+                        c->proc = p;
+                        swtch(&c->context, &p->context);
+
+                        // Process is done running for now.
+                        // It should have changed its p->state before coming back.
+                        c->proc = 0;
+                    }
+                    release(&p->lock);
+                }
+            }
+            else{
+                firstProcess->state = RUNNING;
+                c->proc = firstProcess;
+                swtch(&c->context, &firstProcess->context);
+
+                c->proc = 0;
+                release(&firstProcess->lock);
+            }
+
+        } else if (schedulingAlgorithm == SCHED_RR){
+            for(p = proc; p < &proc[NPROC]; p++) {
+                acquire(&p->lock);
+                if(p->state == RUNNABLE) {
+                    // Switch to chosen process.  It is the process's job
+                    // to release its lock and then reacquire it
+                    // before jumping back to us.
+                    p->state = RUNNING;
+                    c->proc = p;
+                    swtch(&c->context, &p->context);
+
+                    // Process is done running for now.
+                    // It should have changed its p->state before coming back.
+                    c->proc = 0;
+                }
+                release(&p->lock);
+            }
+        }
+
     }
-  }
 }
+
+
 
 // Switch to scheduler.  Must hold only p->lock
 // and have changed proc->state. Saves and restores

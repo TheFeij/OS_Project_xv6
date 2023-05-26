@@ -107,3 +107,9 @@ struct proc {
   char name[16];               // Process name (debugging)
   uint ticks;                  // number of ticks till now
 };
+
+
+enum scheduling_algorithm {
+    SCHED_FCFS,
+    SCHED_RR
+};
